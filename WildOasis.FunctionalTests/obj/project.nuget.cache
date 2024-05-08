@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "D7ZL/G/RWjah/LQ1RzfzWQYbpDN/ox+8LcyBIo7WfRvnpBa2ibGFtDmRT73VRugI0PMQ4bmHhXuOAvVrOVOVWw==",
+  "dgSpecHash": "eaM+PGozasYZkfRSMYg/lzAXc2hFYBNb7FPct4uAEQRJl2Qnr+FPcMzIlYGW8QWsN9ax2ez+Ek96yNEPl1u0HQ==",
   "success": true,
   "projectFilePath": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.FunctionalTests/WildOasis.FunctionalTests.csproj",
   "expectedPackageFiles": [
+    "/Users/nikolat/.nuget/packages/ardalis.guardclauses/4.5.0/ardalis.guardclauses.4.5.0.nupkg.sha512",
     "/Users/nikolat/.nuget/packages/ardalis.smartenum/8.0.0/ardalis.smartenum.8.0.0.nupkg.sha512",
     "/Users/nikolat/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
     "/Users/nikolat/.nuget/packages/coverlet.collector/6.0.0/coverlet.collector.6.0.0.nupkg.sha512",

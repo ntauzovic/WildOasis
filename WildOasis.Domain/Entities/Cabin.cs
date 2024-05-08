@@ -1,3 +1,4 @@
+using Ardalis.GuardClauses;
 using WildOasis.Domain.Enums;
 
 namespace WildOasis.Domain.Entities;
@@ -17,13 +18,13 @@ public class Cabin
         Category category)
     {
         Id = Guid.NewGuid();
-        Name = name;
-        Description = description;
-        MaxCapacity = maxCapacity;
-        RegularPrice = regularPrice;
-        Discount = discount;
-        Image = image;
-        Category = category;
+        Name = Guard.Against.NullOrEmpty(name);
+        Description = Guard.Against.StringTooShort(description,10);
+        MaxCapacity = Guard.Against.Zero(maxCapacity);
+        RegularPrice = Guard.Against.Null(regularPrice);
+        Discount = Guard.Against.Negative(discount);
+        Image = Guard.Against.NullOrEmpty(image);
+        Category = Guard.Against.Null(category);
 
     }
 

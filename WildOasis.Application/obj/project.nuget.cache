@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "VcD5hMxEBqJm6dj+uDmmQ/gf1ORnRQMUvAg2SRmoFOP87b5J5kIJsIXleN/bx/IFFVfqwE+csP2Vg1bKp0N8oQ==",
+  "dgSpecHash": "Mitoi32wCP6p3UJ+7Cqw2IAhueTM+EfFmLhpaMMVhdtD05hTqEa8xko4Qbq/CFiXZtgrc72X6hUdYvO3nUWcrg==",
   "success": true,
   "projectFilePath": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Application/WildOasis.Application.csproj",
   "expectedPackageFiles": [
+    "/Users/nikolat/.nuget/packages/ardalis.guardclauses/4.5.0/ardalis.guardclauses.4.5.0.nupkg.sha512",
     "/Users/nikolat/.nuget/packages/ardalis.smartenum/8.0.0/ardalis.smartenum.8.0.0.nupkg.sha512",
     "/Users/nikolat/.nuget/packages/fluentvalidation/11.9.0/fluentvalidation.11.9.0.nupkg.sha512",
     "/Users/nikolat/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
