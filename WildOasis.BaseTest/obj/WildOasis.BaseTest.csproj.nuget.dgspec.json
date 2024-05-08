@@ -1,0 +1,218 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.BaseTest/WildOasis.BaseTest.csproj": {}
+  },
+  "projects": {
+    "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Application/WildOasis.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Application/WildOasis.Application.csproj",
+        "projectName": "WildOasis.Application",
+        "projectPath": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Application/WildOasis.Application.csproj",
+        "packagesPath": "/Users/nikolat/.nuget/packages/",
+        "outputPath": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nikolat/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Domain/WildOasis.Domain.csproj": {
+                "projectPath": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Domain/WildOasis.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Riok.Mapperly": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.BaseTest/WildOasis.BaseTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.BaseTest/WildOasis.BaseTest.csproj",
+        "projectName": "WildOasis.BaseTest",
+        "projectPath": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.BaseTest/WildOasis.BaseTest.csproj",
+        "packagesPath": "/Users/nikolat/.nuget/packages/",
+        "outputPath": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.BaseTest/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nikolat/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Application/WildOasis.Application.csproj": {
+                "projectPath": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Application/WildOasis.Application.csproj"
+              },
+              "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Domain/WildOasis.Domain.csproj": {
+                "projectPath": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Domain/WildOasis.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Domain/WildOasis.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Domain/WildOasis.Domain.csproj",
+        "projectName": "WildOasis.Domain",
+        "projectPath": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Domain/WildOasis.Domain.csproj",
+        "packagesPath": "/Users/nikolat/.nuget/packages/",
+        "outputPath": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nikolat/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Ardalis.SmartEnum": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=acc900a7_002D0df9_002D409c_002D90b2_002Da7f3830365f8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CabinCreateTest_GivenAllCorectParametars_ReturnValidCabinDetails" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::0F2B2696-3C1D-4D7E-8A07-E28F7DF40E7E::net8.0::WildOasis.FunctionalTests.Cabins.Commands.CabinCreateTests.CabinCreateTest_GivenAllCorectParametars_ReturnValidCabinDetails&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d213978e_002Da655_002D4ded_002D9fba_002Df92645252f7f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CabinCreateTest_GivenAllCorectParametars_ReturnValidCabinDetails #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::0F2B2696-3C1D-4D7E-8A07-E28F7DF40E7E::net8.0::WildOasis.FunctionalTests.Cabins.Commands.CabinCreateTests.CabinCreateTest_GivenAllCorectParametars_ReturnValidCabinDetails&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f63ab9c3_002D62c7_002D495e_002D96d3_002D16cf36c959fb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CabinDetailsQueryTest_GivenValidCabinId_StatusOk" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::0F2B2696-3C1D-4D7E-8A07-E28F7DF40E7E::net8.0::WildOasis.FunctionalTests.Cabins.Queries.CabinDetailsQueryTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::0F2B2696-3C1D-4D7E-8A07-E28F7DF40E7E::net8.0::WildOasis.FunctionalTests.Cabins.Commands.CabinCreateTests.CabinCreateTest_GivenAllCorectParametars_ReturnValidCabinDetails&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

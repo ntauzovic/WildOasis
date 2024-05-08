@@ -1,0 +1,30 @@
+name: WildOasis App start Tests
+
+on:
+  push:
+    branches:
+      - "feature/*" # Matches every feature branch containing a single '/'
+      - "main" # Matches main branches '/'
+      - "!release/**" # Excludes release branches
+
+jobs:
+  backend-build-and-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Set Test Environment Variable
+        run: echo "ASPNETCORE_ENVIRONMENT=Test" >> $GITHUB_ENV
+
+      - name: Build
+        run: dotnet build --configuration Release WildOasis.sln
+
+      - name: Test
+        run: dotnet test --configuration Release WildOasis.sln --no-build --verbosity normal --collect:"XPlat Code Coverage" --logger trx --results-directory coverage
