@@ -4,6 +4,7 @@ using WildOasis.Application.Common.Dto.Cabin;
 using WildOasis.Application.Common.Exceptions;
 using WildOasis.Application.Common.Interfaces;
 using WildOasis.Application.Common.Mappers;
+using WildOasis.Domain.Common.Extensions;
 
 namespace WildOasis.Application.Cabin.Queries;
 
@@ -23,6 +24,11 @@ public class CabinDetailsQueryHandler(IWildOasisDbContext context) : IRequestHan
             throw new NotFoundException("Product not found", new { request.Id });
         }
         var dto = result?.ToDto();
+        //var serializeDto = dto.Serialaze(SerializerExtensions.DefaultOptions);
+        //var serializeDto2 = dto.Serialaze(SerializerExtensions.SettingsWebOptions);
+        //var serializeDto3 = dto.Serialaze(SerializerExtensions.SettingsGeneralOptions);
+
+
         return dto;
     }
 }

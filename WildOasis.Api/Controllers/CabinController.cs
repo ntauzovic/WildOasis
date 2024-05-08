@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using WildOasis.Application.Cabin.Commands;
 using WildOasis.Application.Cabin.Queries;
+using WildOasis.Application.Common.Dto.Cabin;
 using WildOasis.Application.Common.Exceptions;
+using WildOasis.Domain.Common.Extensions;
 using WildOasis.Infrastructure.Contexts;
 
 namespace WilaOasis.Api.Controllers;
@@ -43,5 +45,13 @@ public class CabinController(WildOasisDbContext context) : ApiBaseController
         await Mediator.Send(command);
         return Ok();
     }
-    
+    [HttpPost("create-test")]
+
+    public async Task<IActionResult> TestCreate(CabinTestDto dto)
+    {
+
+
+        var command = dto.Json.Deserialize<CabinCommandCreate>(SerializerExtensions.SettingsWebOptions);
+        return  Ok(await Mediator.Send(command!));
+    }
 }

@@ -432,3 +432,4 @@
 /Users/nikolat/Desktop/WildOasis.backend/WildOasis.Api/obj/Debug/net8.0/WildOasis.Api.pdb
 /Users/nikolat/Desktop/WildOasis.backend/WildOasis.Api/obj/Debug/net8.0/WildOasis.Api.genruntimeconfig.cache
 /Users/nikolat/Desktop/WildOasis.backend/WildOasis.Api/obj/Debug/net8.0/ref/WildOasis.Api.dll
+/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Api/bin/Debug/net8.0/Ardalis.GuardClauses.dll

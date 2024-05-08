@@ -1,3 +1,5 @@
+using Ardalis.GuardClauses;
+
 namespace WildOasis.Domain.Entities;
 
 public class Resort
@@ -8,10 +10,10 @@ public class Resort
         string address,uint number)
     {
         Id = Guid.NewGuid();
-        Name = name;
-        Description = description;
-        Address = address;
-        Number = number;
+        Name = Guard.Against.NullOrEmpty(name);
+        Description = Guard.Against.StringTooShort(description,10);
+        Address = Guard.Against.NullOrEmpty(address);
+        Number = Guard.Against.Null(number);
     }
 
     private Resort()
