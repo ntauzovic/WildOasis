@@ -30,7 +30,6 @@ public class AuthService(ApplicationUserManager userManager, IOptions<JwtConfigu
         var bytes = Encoding.UTF8.GetBytes($"{token}:{emailAddress}");
         validationToken = Convert.ToBase64String(bytes);
 
-        //todo :: send email with this validation token
         return new BeginLoginResponseDto(validationToken);
     }
 
