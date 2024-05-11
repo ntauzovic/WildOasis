@@ -3,22 +3,29 @@ using System.Text.Encodings.Web;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Options;
 using WilaOasis.Api.Auth.Options;
+using WildOasis.Application.Common.Extensions;
 using WildOasis.Application.Common.Interfaces;
+using WildOasis.Application.Configuration;
 
 namespace WilaOasis.Api.Auth.Schemes;
 
 public class HeaderBasicAuthenticationSchemeHandler : AuthenticationHandler<HeaderBasicAuthenticationSchemeOptions>
 {
     private readonly IWildOasisDbContext _dbContext;
+    private readonly AesEncryptionConfiguration _encryptionConfiguration;
+
     [Obsolete("Obsolete")]
     public HeaderBasicAuthenticationSchemeHandler(IOptionsMonitor<HeaderBasicAuthenticationSchemeOptions> options,
-        ILoggerFactory logger, UrlEncoder encoder, ISystemClock clock) : base(options, logger, encoder, clock)
+        ILoggerFactory logger, UrlEncoder encoder, ISystemClock clock, IOptions<AesEncryptionConfiguration> AesConfig) : base(options, logger, encoder, clock)
     {
+        _encryptionConfiguration = AesConfig.Value;
     }
 
     public HeaderBasicAuthenticationSchemeHandler(IOptionsMonitor<HeaderBasicAuthenticationSchemeOptions> options,
-        ILoggerFactory logger, UrlEncoder encoder) : base(options, logger, encoder)
+        ILoggerFactory logger, UrlEncoder encoder,  IOptions<AesEncryptionConfiguration> AesConfig) : base(options, logger, encoder)
     {
+        _encryptionConfiguration = AesConfig.Value;
+
     }
 
     protected override async Task<AuthenticateResult> HandleAuthenticateAsync()
@@ -36,7 +43,7 @@ public class HeaderBasicAuthenticationSchemeHandler : AuthenticationHandler<Head
             
             var user = Options.Users.SingleOrDefault(user =>
                 user.username.Equals(username, StringComparison.OrdinalIgnoreCase) &&
-                user.password.Equals(password, StringComparison.OrdinalIgnoreCase) &&
+                user.password.Decrypt(_encryptionConfiguration.Key).Equals(password, StringComparison.OrdinalIgnoreCase) &&
                 user.resort.Equals(resort, StringComparison.OrdinalIgnoreCase));
 
             var claims = new List<Claim> { new(ClaimTypes.NameIdentifier, username) };

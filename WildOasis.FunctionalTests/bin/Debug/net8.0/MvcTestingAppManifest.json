@@ -1,7 +1,7 @@
 {
-  "WildOasis.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/nikolat\/Documents\/GitHub\/WildOasis.be\/WildOasis.Api",
-  "WildOasis.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/nikolat\/Documents\/GitHub\/WildOasis.be\/WildOasis.Application",
-  "WildOasis.BaseTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/nikolat\/Documents\/GitHub\/WildOasis.be\/WildOasis.BaseTest",
-  "WildOasis.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/nikolat\/Documents\/GitHub\/WildOasis.be\/WildOasis.Domain",
-  "WildOasis.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/nikolat\/Documents\/GitHub\/WildOasis.be\/WildOasis.Infrastructure"
+  "WildOasis.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/nikolat\/Desktop\/WildOasis.backend\/WildOasis.Api",
+  "WildOasis.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/nikolat\/Desktop\/WildOasis.backend\/WildOasis.Application",
+  "WildOasis.BaseTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/nikolat\/Desktop\/WildOasis.backend\/WildOasis.BaseTest",
+  "WildOasis.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/nikolat\/Desktop\/WildOasis.backend\/WildOasis.Domain",
+  "WildOasis.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/nikolat\/Desktop\/WildOasis.backend\/WildOasis.Infrastructure"
 }
