@@ -24,14 +24,14 @@ public class WildOasisDbContext(DbContextOptions<WildOasisDbContext>options)
     }
 
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    /*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
 
         if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") != "Test")
         {
             optionsBuilder.UseNpgsql("Host=localhost;Username=postgres;Password=root;Database=WildOasis3");
         }
-    }
+    }*/
     public DbSet<Cabin> Cabins => Set<Cabin>();
     public DbSet<Resort> Resorts => Set<Resort>();
 
