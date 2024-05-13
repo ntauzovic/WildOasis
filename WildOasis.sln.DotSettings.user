@@ -4,12 +4,12 @@
     &lt;TestId&gt;xUnit::0F2B2696-3C1D-4D7E-8A07-E28F7DF40E7E::net8.0::WildOasis.FunctionalTests.Cabins.Commands.CabinCreateTests.CabinCreateTest_GivenAllCorectParametars_ReturnValidCabinDetails&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d213978e_002Da655_002D4ded_002D9fba_002Df92645252f7f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CabinCreateTest_GivenAllCorectParametars_ReturnValidCabinDetails #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d213978e_002Da655_002D4ded_002D9fba_002Df92645252f7f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CabinCreateTest_GivenAllCorectParametars_ReturnValidCabinDetails #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::0F2B2696-3C1D-4D7E-8A07-E28F7DF40E7E::net8.0::WildOasis.FunctionalTests.Cabins.Commands.CabinCreateTests.CabinCreateTest_GivenAllCorectParametars_ReturnValidCabinDetails&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::0F2B2696-3C1D-4D7E-8A07-E28F7DF40E7E::net8.0::WildOasis.FunctionalTests.Cabins.Commands.CabinCreateTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f63ab9c3_002D62c7_002D495e_002D96d3_002D16cf36c959fb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CabinDetailsQueryTest_GivenValidCabinId_StatusOk" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f63ab9c3_002D62c7_002D495e_002D96d3_002D16cf36c959fb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CabinDetailsQueryTest_GivenValidCabinId_StatusOk" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::0F2B2696-3C1D-4D7E-8A07-E28F7DF40E7E::net8.0::WildOasis.FunctionalTests.Cabins.Queries.CabinDetailsQueryTests&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::0F2B2696-3C1D-4D7E-8A07-E28F7DF40E7E::net8.0::WildOasis.FunctionalTests.Cabins.Commands.CabinCreateTests.CabinCreateTest_GivenAllCorectParametars_ReturnValidCabinDetails&lt;/TestId&gt;
