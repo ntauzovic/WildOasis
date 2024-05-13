@@ -25,7 +25,7 @@ jobs:
         
 
       - name: Docker push iamge to Azure container registry
-        run: docker push wildoasis.azurecr.io/wildoasis:latest
+        run: docker push wildoasis.azurecr.io/wildoasis:latest2
       
       - name: Run container
         run: docker run -d -p 8080:8080 wildoasis.azurecr.io/wildoasis:latest
