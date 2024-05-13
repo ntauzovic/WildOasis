@@ -1,0 +1,10 @@
+﻿services:
+  wildoasis.api:
+    image: wildoasis-be-api
+    restart: always
+    container_name: wildoasis-be-api
+    ports:
+      - 8080:8080
+    build:
+      context: .
+      dockerfile: WildOasis.Api/Dockerfile
