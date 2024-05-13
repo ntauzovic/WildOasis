@@ -17,11 +17,8 @@ jobs:
         run: az acr login --name wildoasis --username ${{ secrets.AZURE_USERNAME }} --password ${{ secrets.AZURE_PASSWORD }}
 
       - name: Build and push Docker image
-        uses: docker/build-push-action@v2
-        with:
-          file: WildOasis.backend/WildOasis.Api/Dockerfile
-          push: true
-          tags: wildoasis.azurecr.io/wildoasis:latest
+        run: docker build -f WildOasis.Api/Dockerfile --force-rm -t wildoasis.azurecr.io/wildoasis:latest .
+        
 
       - name: Bring down existing containers
         run: docker-compose down
