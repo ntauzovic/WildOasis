@@ -22,7 +22,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: wildoasis.azurecr.io/wildOasis:latest .
+          tags: wildoasis.azurecr.io/wildOasis:latest
 
       - name: Bring down existing containers
         run: docker-compose down
