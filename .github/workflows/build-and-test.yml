@@ -29,4 +29,4 @@ jobs:
       - name: Test
         run: dotnet test --configuration Release WildOasis.sln --no-build --verbosity normal --collect:"XPlat Code Coverage" --logger trx --results-directory coverage
         
-      naziv image wildoasis-be-api 
+     
