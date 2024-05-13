@@ -19,8 +19,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
         with:
-          context: .
-          file: ../../WildOasis.Api/Dockerfile
+          file: WildOasis.backend/WildOasis.Api/Dockerfile
           push: true
           tags: wildoasis.azurecr.io/wildoasis:latest
 
