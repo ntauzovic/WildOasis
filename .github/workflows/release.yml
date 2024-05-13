@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  Build and push to Azure:
+  Build-and-push-to-Azure:
     runs-on: ubuntu-latest
 
     steps:
@@ -15,8 +15,7 @@ jobs:
 
       - name: Login to Azure Container Registry
         run: az acr login --name wildoasis --username ${{ secrets.AZURE_USERNAME }} --password ${{ secrets.AZURE_PASSWORD }}
-      
-      
+
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
         with:
@@ -33,5 +32,3 @@ jobs:
 
       - name: Run container
         run: docker run -d -p 8080:8080 wildoasis.azurecr.io/wildoasis:latest
-        
-        
