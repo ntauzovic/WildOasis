@@ -17,7 +17,7 @@ jobs:
         run: dotnet tool install --global dotnet-ef
       - name: EF Core Database Update
         working-directory: WildOasis
-        run: dotnet ef database update --verbose -f WildOasis.Infrastructure/Contexts/WildOasisDbContext  --project WildOasis.Infrastructure --startup-project WildOasis.Api 
+        run: dotnet ef database update --verbose --project WildOasis.Infrastructure --startup-project WildOasis.Api
 
       - name: Login to Azure Container Registry
         run: az acr login --name wildoasis --username ${{ secrets.AZURE_USERNAME }} --password ${{ secrets.AZURE_PASSWORD }}
