@@ -21,11 +21,11 @@ jobs:
         run: az acr login --name wildoasis --username ${{ secrets.AZURE_USERNAME }} --password ${{ secrets.AZURE_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -f WildOasis.Api/Dockerfile --force-rm -t wildoasis.azurecr.io/wildoasis:latest .
+        run: docker build -f WildOasis.Api/Dockerfile --force-rm -t wildoasis.azurecr.io/wildoasis:latest2 .
         
 
       - name: Docker push iamge to Azure container registry
         run: docker push wildoasis.azurecr.io/wildoasis:latest2
       
       - name: Run container
-        run: docker run -d -p 8080:8080 wildoasis.azurecr.io/wildoasis:latest
+        run: docker run -d -p 8080:8080 wildoasis.azurecr.io/wildoasis:latest2
