@@ -15,17 +15,20 @@ jobs:
 
       - name: Install dotnet-ef tool
         run: dotnet tool install --global dotnet-ef
-     
-
+      
+      #- name: EF Core Database Update
+       # working-directory: WildOasis
+       # run: dotnet ef database update --verbose --project WildOasis.Infrastructure --startup-project WildOasis.Api
+      
       - name: Login to Azure Container Registry
         run: az acr login --name wildoasis --username ${{ secrets.AZURE_USERNAME }} --password ${{ secrets.AZURE_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -f WildOasis.Api/Dockerfile --force-rm -t wildoasis.azurecr.io/wildoasis:latest2 .
+        run: docker build -f WildOasis.Api/Dockerfile --force-rm -t wildoasis.azurecr.io/wildoasis:latest3 .
         
 
       - name: Docker push iamge to Azure container registry
-        run: docker push wildoasis.azurecr.io/wildoasis:latest2
+        run: docker push wildoasis.azurecr.io/wildoasis:latest3
       
       - name: Run container
-        run: docker run -d -p 8080:8080 wildoasis.azurecr.io/wildoasis:latest2
+        run: docker run -d -p 8080:8080 wildoasis.azurecr.io/wildoasis:latest3

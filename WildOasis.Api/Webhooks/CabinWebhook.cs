@@ -1,6 +1,6 @@
-using Demo.Auth.Constants;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using WilaOasis.Api.Auth.Constants;
 using WildOasis.Application.Cabin.Commands;
 
 namespace WilaOasis.Api.Webhooks;

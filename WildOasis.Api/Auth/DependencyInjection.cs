@@ -1,4 +1,4 @@
-using Demo.Auth.Constants;
+using WilaOasis.Api.Auth.Constants;
 using WilaOasis.Api.Auth.Options;
 using WilaOasis.Api.Auth.Schemes;
 

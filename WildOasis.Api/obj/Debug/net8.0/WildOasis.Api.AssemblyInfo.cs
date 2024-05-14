@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WildOasis.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbd1bb9ebcfa4cf072ad4f039a313dc0a91e4965")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63be5a2a70f90c1228da5db1dd186e774ccf92c4")]
 [assembly: System.Reflection.AssemblyProductAttribute("WildOasis.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WildOasis.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

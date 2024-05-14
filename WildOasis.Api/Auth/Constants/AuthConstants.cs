@@ -1,4 +1,4 @@
-namespace Demo.Auth.Constants;
+namespace WilaOasis.Api.Auth.Constants;
 
 public class AuthConstants
 {
