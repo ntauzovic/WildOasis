@@ -31,9 +31,10 @@ jobs:
         run: docker push wildoasis.azurecr.io/wildoasis:latest4
       
       - name: Create resource group
-        run: az group create -- name WildOasis --location eastus
-        
-        
+        run: az group create --name WildOasis --location eastus
+      
+      
+      
       - name: Create container
         run: az container create --resource-group WildOasisNsi -- name WildOasis --image wildoasis.azurecr.io/wildoasis:latest4 --dns-name-label wildoasis --ports 8080
       
