@@ -33,7 +33,7 @@ jobs:
         run: az group create --name WildOasis --location eastus
 
       - name: Create container
-        run: az container create --resource-group WildOasis --name WildOasisContainer --image wildoasis.azurecr.io/wildoasis:latest4 --dns-name-label wildoasis --ports 808
+        run: az container create --resource-group WildOasis --name WildOasisContainer --image wildoasis.azurecr.io/wildoasis:latest4 --dns-name-label wildoasis --ports 8080
       
       #- name: Run container
        # run: docker run -d -p 8080:8080 --name WildOasis --os-type Linux --subscription Azure for Students --resource-group WildOasisNsi --location eastus wildoasis.azurecr.io/wildoasis:latest4
