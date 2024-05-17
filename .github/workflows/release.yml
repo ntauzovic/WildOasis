@@ -25,19 +25,15 @@ jobs:
 
       - name: Build Docker image
         run: docker build -f WildOasis.Api/Dockerfile --force-rm -t wildoasis.azurecr.io/wildoasis:latest4 .
-        
 
-      - name: Docker push iamge to Azure container registry
+      - name: Push Docker image to Azure Container Registry
         run: docker push wildoasis.azurecr.io/wildoasis:latest4
-      
+
       - name: Create resource group
         run: az group create --name WildOasis --location eastus
-      
-      
-      
+
       - name: Create container
-        run: az container create --resource-group WildOasisNsi -- name WildOasis --image wildoasis.azurecr.io/wildoasis:latest4 --dns-name-label wildoasis --ports 8080
-      
+        run: az container create --resource-group WildOasis --name WildOasisContainer --image wildoasis.azurecr.io/wildoasis:latest4 --dns-name-label wildoasis --ports 808
       
       #- name: Run container
        # run: docker run -d -p 8080:8080 --name WildOasis --os-type Linux --subscription Azure for Students --resource-group WildOasisNsi --location eastus wildoasis.azurecr.io/wildoasis:latest4
