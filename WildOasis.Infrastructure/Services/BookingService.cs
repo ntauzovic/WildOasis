@@ -29,9 +29,13 @@ public class BookingService(WildOasisDbContext dbContext, IMediator mediator, IE
         }
 
         var existingReservation = await dbContext.Bookings
-            .AnyAsync(b => b.Cabin.Id == reservationCreateDto.CabinId 
-                           && b.StartedAt < reservationCreateDto.EndAt 
-                           && b.EndAt > reservationCreateDto.StartedAt, 
+            .AnyAsync(b => b.Cabin.Id == reservationCreateDto.CabinId
+                           && b.StartedAt < reservationCreateDto.EndAt
+                           && b.EndAt > reservationCreateDto.StartedAt
+                           && b.CreateAt > reservationCreateDto.StartedAt
+                           && b.CreateAt > reservationCreateDto.EndAt
+
+                , 
                 cancellationToken);
         
         if (existingReservation)
@@ -44,7 +48,7 @@ public class BookingService(WildOasisDbContext dbContext, IMediator mediator, IE
         await dbContext.SaveChangesAsync(cancellationToken);
         //Console.WriteLine($"CabinId: {reservationCreateDto.CabinId}, StartedAt: {reservationCreateDto.StartedAt}, EndAt: {reservationCreateDto.EndAt}");
 
-        await mediator.Publish(new CabinReservationDomainEvents(reservationCreateDto.CabinId, reservationCreateDto.StartedAt, reservationCreateDto.EndAt), cancellationToken);
+        //await mediator.Publish(new CabinReservationDomainEvents(reservationCreateDto.CabinId, reservationCreateDto.StartedAt, reservationCreateDto.EndAt), cancellationToken);
 
 
         var subject = "Reservation Confirmation";

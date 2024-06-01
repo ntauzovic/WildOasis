@@ -9339,11 +9339,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.FunctionalTests/WildOasis.FunctionalTests.csproj",
+      "projectUniqueName": "/Users/nikolat/Desktop/WildOasis2/WildOasis.FunctionalTests/WildOasis.FunctionalTests.csproj",
       "projectName": "WildOasis.FunctionalTests",
-      "projectPath": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.FunctionalTests/WildOasis.FunctionalTests.csproj",
+      "projectPath": "/Users/nikolat/Desktop/WildOasis2/WildOasis.FunctionalTests/WildOasis.FunctionalTests.csproj",
       "packagesPath": "/Users/nikolat/.nuget/packages/",
-      "outputPath": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.FunctionalTests/obj/",
+      "outputPath": "/Users/nikolat/Desktop/WildOasis2/WildOasis.FunctionalTests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/nikolat/.nuget/NuGet/NuGet.Config"
@@ -9358,14 +9358,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Api/WildOasis.Api.csproj": {
-              "projectPath": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Api/WildOasis.Api.csproj"
+            "/Users/nikolat/Desktop/WildOasis2/WildOasis.Api/WildOasis.Api.csproj": {
+              "projectPath": "/Users/nikolat/Desktop/WildOasis2/WildOasis.Api/WildOasis.Api.csproj"
             },
-            "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.BaseTest/WildOasis.BaseTest.csproj": {
-              "projectPath": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.BaseTest/WildOasis.BaseTest.csproj"
+            "/Users/nikolat/Desktop/WildOasis2/WildOasis.BaseTest/WildOasis.BaseTest.csproj": {
+              "projectPath": "/Users/nikolat/Desktop/WildOasis2/WildOasis.BaseTest/WildOasis.BaseTest.csproj"
             },
-            "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Infrastructure/WildOasis.Infrastructure.csproj": {
-              "projectPath": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Infrastructure/WildOasis.Infrastructure.csproj"
+            "/Users/nikolat/Desktop/WildOasis2/WildOasis.Infrastructure/WildOasis.Infrastructure.csproj": {
+              "projectPath": "/Users/nikolat/Desktop/WildOasis2/WildOasis.Infrastructure/WildOasis.Infrastructure.csproj"
             }
           }
         }

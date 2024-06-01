@@ -48,3 +48,16 @@
 /Users/nikolat/Desktop/WildOasis.backend/WildOasis.Domain/obj/Debug/net8.0/refint/WildOasis.Domain.dll
 /Users/nikolat/Desktop/WildOasis.backend/WildOasis.Domain/obj/Debug/net8.0/WildOasis.Domain.pdb
 /Users/nikolat/Desktop/WildOasis.backend/WildOasis.Domain/obj/Debug/net8.0/ref/WildOasis.Domain.dll
+/Users/nikolat/Desktop/WildOasis2/WildOasis.Domain/bin/Debug/net8.0/WildOasis.Domain.deps.json
+/Users/nikolat/Desktop/WildOasis2/WildOasis.Domain/bin/Debug/net8.0/WildOasis.Domain.dll
+/Users/nikolat/Desktop/WildOasis2/WildOasis.Domain/bin/Debug/net8.0/WildOasis.Domain.pdb
+/Users/nikolat/Desktop/WildOasis2/WildOasis.Domain/obj/Debug/net8.0/WildOasis.Domain.csproj.AssemblyReference.cache
+/Users/nikolat/Desktop/WildOasis2/WildOasis.Domain/obj/Debug/net8.0/WildOasis.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nikolat/Desktop/WildOasis2/WildOasis.Domain/obj/Debug/net8.0/WildOasis.Domain.AssemblyInfoInputs.cache
+/Users/nikolat/Desktop/WildOasis2/WildOasis.Domain/obj/Debug/net8.0/WildOasis.Domain.AssemblyInfo.cs
+/Users/nikolat/Desktop/WildOasis2/WildOasis.Domain/obj/Debug/net8.0/WildOasis.Domain.csproj.CoreCompileInputs.cache
+/Users/nikolat/Desktop/WildOasis2/WildOasis.Domain/obj/Debug/net8.0/WildOasis.Domain.sourcelink.json
+/Users/nikolat/Desktop/WildOasis2/WildOasis.Domain/obj/Debug/net8.0/WildOasis.Domain.dll
+/Users/nikolat/Desktop/WildOasis2/WildOasis.Domain/obj/Debug/net8.0/refint/WildOasis.Domain.dll
+/Users/nikolat/Desktop/WildOasis2/WildOasis.Domain/obj/Debug/net8.0/WildOasis.Domain.pdb
+/Users/nikolat/Desktop/WildOasis2/WildOasis.Domain/obj/Debug/net8.0/ref/WildOasis.Domain.dll

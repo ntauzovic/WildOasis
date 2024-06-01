@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sOv5kLxw63CNOdBaXDX+4PequMhmB8tOskH3RAfJnQyqmI/FDeMTXcWfkFX66kwHThebBZgNzFwqJHWtb66U8w==",
+  "dgSpecHash": "1sDHQ5ssucw0ovFBpUBSWcofLZpfZs4+1EgddZv1pjuveIj7ETgL3UVlJY+8Q6b3azFiiDKySMNAyHP9ZXpbsA==",
   "success": true,
-  "projectFilePath": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Infrastructure/WildOasis.Infrastructure.csproj",
+  "projectFilePath": "/Users/nikolat/Desktop/WildOasis2/WildOasis.Infrastructure/WildOasis.Infrastructure.csproj",
   "expectedPackageFiles": [
     "/Users/nikolat/.nuget/packages/ardalis.guardclauses/4.5.0/ardalis.guardclauses.4.5.0.nupkg.sha512",
     "/Users/nikolat/.nuget/packages/ardalis.smartenum/8.0.0/ardalis.smartenum.8.0.0.nupkg.sha512",

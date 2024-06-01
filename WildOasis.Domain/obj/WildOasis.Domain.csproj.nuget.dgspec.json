@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Domain/WildOasis.Domain.csproj": {}
+    "/Users/nikolat/Desktop/WildOasis2/WildOasis.Domain/WildOasis.Domain.csproj": {}
   },
   "projects": {
-    "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Domain/WildOasis.Domain.csproj": {
+    "/Users/nikolat/Desktop/WildOasis2/WildOasis.Domain/WildOasis.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Domain/WildOasis.Domain.csproj",
+        "projectUniqueName": "/Users/nikolat/Desktop/WildOasis2/WildOasis.Domain/WildOasis.Domain.csproj",
         "projectName": "WildOasis.Domain",
-        "projectPath": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Domain/WildOasis.Domain.csproj",
+        "projectPath": "/Users/nikolat/Desktop/WildOasis2/WildOasis.Domain/WildOasis.Domain.csproj",
         "packagesPath": "/Users/nikolat/.nuget/packages/",
-        "outputPath": "/Users/nikolat/Desktop/WildOasis.backend/WildOasis.Domain/obj/",
+        "outputPath": "/Users/nikolat/Desktop/WildOasis2/WildOasis.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/nikolat/.nuget/NuGet/NuGet.Config"
