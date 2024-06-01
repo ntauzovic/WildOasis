@@ -1,3 +1,4 @@
+using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using WildOasis.Application.Common.Exceptions;
@@ -15,7 +16,8 @@ public class ApiExceptionFilterAttribute : ExceptionFilterAttribute
             { typeof(ValidationException), HandleValidationException },
             { typeof(FluentValidation.ValidationException), HandleFluentValidationException },
             { typeof(NotFoundException), HandleNotFoundException },
-            { typeof(UnauthorizedAccessException), HandleUnauthorizedAccessException }
+            { typeof(UnauthorizedAccessException), HandleUnauthorizedAccessException },
+            { typeof(ExistReservation),HandleReservationException}
 
         };
     }
@@ -88,6 +90,26 @@ public class ApiExceptionFilterAttribute : ExceptionFilterAttribute
         };
 
         context.Result = new NotFoundObjectResult(details);
+
+        context.ExceptionHandled = true;
+    }
+    
+    private void HandleReservationException(ExceptionContext context)
+    {
+        var exception = (ExistReservation)context.Exception;
+
+        var details = new ProblemDetails()
+        {
+            Type = "https://tools.ietf.org/html/rfc7231#section-6.5.4",
+            Title = "Conflict",
+            Detail = exception.Message,
+            Status = (int)HttpStatusCode.Conflict
+        };
+
+        context.Result = new ObjectResult(details)
+        {
+            StatusCode = details.Status
+        };
 
         context.ExceptionHandled = true;
     }

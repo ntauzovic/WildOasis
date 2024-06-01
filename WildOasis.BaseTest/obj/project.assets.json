@@ -500,6 +500,7 @@
         "dependencies": {
           "Ardalis.GuardClauses": "4.5.0",
           "Ardalis.SmartEnum": "8.0.0",
+          "MediatR.Contracts": "2.0.1",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.2"
         },
         "compile": {

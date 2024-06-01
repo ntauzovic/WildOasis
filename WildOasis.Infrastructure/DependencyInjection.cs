@@ -1,9 +1,12 @@
+using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using WildOasis.Application.Booking.Handler;
 using WildOasis.Application.Common.Interfaces;
 using WildOasis.Domain.Entities;
+using WildOasis.Domain.Events;
 using WildOasis.Infrastructure.Auth.Extensions;
 using WildOasis.Infrastructure.Configuration;
 using WildOasis.Infrastructure.Contexts;
@@ -42,7 +45,12 @@ public static class DependencyInjection
         services.AddScoped<IAuthService, AuthService>();
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<IRoleService, RoleService>();
+        services.AddScoped<IBookingService, BookingService>();
         services.AddScoped<ICurrentUserService, CurrentUserService>();
+        services.AddScoped<IEmailService, EmailService>();
+
+        services.AddScoped<INotificationHandler<CabinReservationDomainEvents>, CabinReservedDomainEventHandler>();
+
         services.Configure<JwtConfiguration>(configuration.GetSection("JwtConfiguration"));
 
         

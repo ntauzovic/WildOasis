@@ -28,12 +28,7 @@ public class Cabin
 
     }
 
-    public Cabin AddResort(Resort resort)
-    {
-        Resort = resort;
-        return this;
-
-    }
+   
 
     public Guid Id { get;  set; }
     public string Name { get;  set; }
@@ -50,6 +45,13 @@ public class Cabin
          set;
     } 
 
+    public Cabin AddResort(Resort resort)
+    {
+        Resort = resort;
+        return this;
+
+    }
     
-   
+    public IList<Booking> Bookings { get; } = new List<Booking>();
+
 }
