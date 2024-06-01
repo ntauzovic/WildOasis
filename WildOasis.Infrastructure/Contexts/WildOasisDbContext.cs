@@ -34,6 +34,8 @@ public class WildOasisDbContext(DbContextOptions<WildOasisDbContext>options)
     }*/
     public DbSet<Cabin> Cabins => Set<Cabin>();
     public DbSet<Resort> Resorts => Set<Resort>();
+    public DbSet<Booking> Bookings => Set<Booking>();
+
 
     public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new())
     {

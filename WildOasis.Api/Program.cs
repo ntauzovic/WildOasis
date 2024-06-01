@@ -5,8 +5,10 @@ using Microsoft.OpenApi.Models;
 using WilaOasis.Api.Auth;
 using WilaOasis.Api.Filters;
 using WildOasis.Application;
+using WildOasis.Application.Common.Interfaces;
 using WildOasis.Infrastructure;
 using WildOasis.Infrastructure.Configuration;
+using WildOasis.Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,6 +43,8 @@ builder.Services.AddSwaggerGen(c =>
 });builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddApplication(builder.Configuration);
 builder.Services.AddWildOasisAuthentication(builder.Configuration);
+builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddScoped<IBookingService, BookingService>();
 
 var jwtConfiguration = new JwtConfiguration();
 builder.Configuration

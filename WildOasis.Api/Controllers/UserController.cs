@@ -7,7 +7,7 @@ namespace WilaOasis.Api.Controllers;
 
     public class UserController : ApiBaseController
     {
-        [Authorize(Roles = "Administrator")]
+        //[Authorize(Roles = "Administrator")]
         [HttpPost]
         public async Task<ActionResult> CreateUser(CreateUserCommand command)
         {

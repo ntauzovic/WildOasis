@@ -18,7 +18,7 @@ public class CabinServices(WildOasisDbContext dbContext): ICabinService
         {
             throw new NotFoundException("Company not exist");
         }
-
+        
         var cabin = cabinCreateDto.ToEntity().AddResort(resort);
         dbContext.Cabins.Add(cabin);
         await dbContext.SaveChangesAsync(cancellationToken);

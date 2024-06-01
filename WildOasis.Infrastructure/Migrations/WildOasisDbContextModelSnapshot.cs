@@ -311,6 +311,58 @@ namespace WildOasis.Infrastructure.Migrations
                         });
                 });
 
+            modelBuilder.Entity("WildOasis.Domain.Entities.Booking", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("CabinId")
+                        .HasColumnType("uuid");
+
+                    b.Property<decimal>("CabinPrice")
+                        .HasColumnType("numeric");
+
+                    b.Property<DateTime>("CreateAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime>("EndAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<decimal>("ExtraPrice")
+                        .HasColumnType("numeric");
+
+                    b.Property<bool>("HasBreakfast")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("IsPaid")
+                        .HasColumnType("boolean");
+
+                    b.Property<int>("NumGuest")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Observation")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("StartedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("numeric");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CabinId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Booking", (string)null);
+                });
+
             modelBuilder.Entity("WildOasis.Domain.Entities.Cabin", b =>
                 {
                     b.Property<Guid>("Id")
@@ -432,6 +484,25 @@ namespace WildOasis.Infrastructure.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("WildOasis.Domain.Entities.Booking", b =>
+                {
+                    b.HasOne("WildOasis.Domain.Entities.Cabin", "Cabin")
+                        .WithMany("Bookings")
+                        .HasForeignKey("CabinId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WildOasis.Domain.Entities.ApplicationUser", "User")
+                        .WithMany("Bookings")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cabin");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("WildOasis.Domain.Entities.Cabin", b =>
                 {
                     b.HasOne("WildOasis.Domain.Entities.Resort", "Resort")
@@ -450,7 +521,14 @@ namespace WildOasis.Infrastructure.Migrations
 
             modelBuilder.Entity("WildOasis.Domain.Entities.ApplicationUser", b =>
                 {
+                    b.Navigation("Bookings");
+
                     b.Navigation("Roles");
+                });
+
+            modelBuilder.Entity("WildOasis.Domain.Entities.Cabin", b =>
+                {
+                    b.Navigation("Bookings");
                 });
 
             modelBuilder.Entity("WildOasis.Domain.Entities.Resort", b =>
